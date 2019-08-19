@@ -24,6 +24,30 @@ Basically, Helm has two parts, the helm client and tiller server, they're not ne
 
 The best teacher is at Github ( like always ) : https://github.com/helm/helm/blob/master/docs/install.md
 
+Build command for Helm:
+
+    make bootstrap build
+
+
+After install helm in Kubernetes : 
+
+    kubectl create serviceaccount --namespace kube-system tiller
+
+    kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
+
+    kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
+
+
+## where these charts can be sources ? 
+
+If you go to your local repository : 
+
+    cd ./.helm/repostory 
+
+So if you query the repositories.yaml file you'll find the official repository which is  : 
+
+    http://kubernetes-charts.storage.googleapis.com/
+
 ## In action :
 
 Check the helm home space : 
@@ -40,7 +64,7 @@ Check the version of Helm:
 
 If you're using Helm 2, the output will cover the version information for both client and server. 
 
-First start to use Helm, you have to initialise using the following command :
+First start to use Helm, you have to initialise ( install tiller ) using the following command :
 
     helm init 
 
@@ -51,6 +75,10 @@ First start to use Helm, you have to initialise using the following command :
 To query the helm charts has been deployed : 
 
     helm ls
+
+If you simply want the name, you can do this : 
+
+   helm ls --short
 
 To query helm chart are available : 
 

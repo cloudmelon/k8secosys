@@ -14,8 +14,18 @@ This repostitory recap all useful information on ecosystem of Kubernetes.
 - AKS Known-issues: https://aka.ms/aks/knownissues
 
 
-## More details on my blog : 
+## More details on my blog & other Github repos : 
+
 
 Please go to my blog cloud-melon.com to get more details about how to implement this solution and more about Microsoft Azure ( ref link : https://cloud-melon.com )
 
 Feel free to reach out to my twitter **@MelonyQ** for more details ( https://twitter.com/MelonyQ ). 
+
+
+Find wrap-ups of some useful bash commands here : 
+[cloudmelon's bash playbook ](https://github.com/cloudmelon/melonbash)
+
+
+Find wrap-ups of some useful git commands here : 
+[cloudmelon's git playbook ](https://github.com/cloudmelon/melongit)
+

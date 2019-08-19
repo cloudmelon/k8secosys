@@ -1,8 +1,13 @@
 #  Part 0 : Overview
 
-Recap some BASH commands when playing with Kubernetes and other CNCF projects 
+The ecosystem of Kubernetes
+
+- Managing packages with Helm
+- Service mesh with istio
+- Deploy Docker Compose Files with Kompose
+- Weave Scope on Kubernetes
+- Backup and Restore with Heptio Velero
+- Monitoring kubernetes with prometheus
 
 
-Find wrap-ups of some useful git commands here : 
-[cloudmelon's git playbook ](https://github.com/cloudmelon/melongit)
 
