@@ -1,4 +1,4 @@
-# The Playbook on Kubernetes Ecosystem 
+# Kubernetes Ecosystem Playbook
 
 This repostitory recap all useful information on ecosystem of Kubernetes. 
 
