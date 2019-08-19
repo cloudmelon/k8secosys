@@ -148,6 +148,52 @@ Update the dependencies :
 
 Dependencies are in requirements.yaml
 
+To inspect a helm chart is ( kind of like kubectl decribe in K8S which including all the configurable value ): 
+
+     helm inspect melon/chart 
+
 Delete a helm chart has been deployed using the following : 
 
-    helm delete melonchart
+     helm delete melonchart
+
+Whenever you install a chart, a new release is created. So one chart can be installed multiple times into the same cluster. And each can be independently managed and upgraded. To upgrade a release to a specified version of a chart and/or updates chart values :
+
+    helm upgrade [RELEASE] [CHART_path] [flags]
+
+Example :
+
+    helm upgrade melon-release ~/melonchart
+
+
+Check the history of the releases : 
+
+    helm history melonreleasechart
+
+Sample output is like the following : 
+<img src="screenshots/Rollback.PNG" alt="heml rollback" width="600px"/>
+
+Roll back to a specific version 
+
+    helm rollback melon-release 2
+
+Sample output is like the following : 
+<img src="screenshots/Helm history.PNG" alt="package management" width="600px"/>
+
+## Custom Charts
+
+You can override values one time during the install command by using **--set** flag :
+
+     helm install --name storage-release --set persistence.storageClass=xx-block
+
+
+Or fetch the chart and modify the **values.yaml** file, then pass a values.yaml file on the install command line. This allow me to consolidate all of the deployment I would do for an application in one place. 
+
+
+To add Custom charts to the repo :
+
+     helm repo add melonchart https://raw.githubusercontent.com/melonchart/helmcharts/master
+
+
+## Find more Helm commands 
+
+    https://helm.sh/docs/helm/
