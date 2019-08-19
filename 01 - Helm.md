@@ -40,6 +40,14 @@ Check the version of Helm:
 
 If you're using Helm 2, the output will cover the version information for both client and server. 
 
+First start to use Helm, you have to initialise using the following command :
+
+    helm init 
+
+  Upgrade if Tiller is already installed, you can use the following : 
+  
+   helm init --upgrade  
+
 To query the helm charts has been deployed : 
 
     helm ls
