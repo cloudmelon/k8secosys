@@ -63,7 +63,7 @@ Hence to wrap up the Helm charts are from :
 - requirements.lock
 - requirements.yaml ( optional file that lists dependencies for that chart, and the dependencies are actually packaged in charts folder )
 - templates ( folder,  actually templates that combines with values to generate Kubernetes Manifest files )
-- values.yaml ( contains the default configuration values for the chart, this is where helm grabs the values for the manifest template )
+- values.yaml ( contains the default configuration values for the chart, this is where helm grabs the values for the manifest template where contains the reference values )
 
 ## Create your own Helm charts
 
