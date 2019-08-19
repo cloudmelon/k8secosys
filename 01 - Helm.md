@@ -44,9 +44,47 @@ If you go to your local repository :
 
     cd ./.helm/repostory 
 
-So if you query the repositories.yaml file you'll find the official repository which is  : 
+So if you query the repositories.yaml file you'll find some repositories : 
 
-    http://kubernetes-charts.storage.googleapis.com/
+
+Hence to wrap up the Helm charts are from :
+
+- Offical repository which has been mentionned :  http://kubernetes-charts.storage.googleapis.com/
+- Private repostories : such as some repos on GitHub or some cloud Storage providers etc..
+- Local charts : helm create and helm fetch ( The diffrence is Helm create help you create helm charts from scratch on you own , HOWEVER helm fetch help you pull down some charts then you can work on these chart and turn them into your local chart, highly customized )
+
+
+
+## File structure of a chart
+
+- Charts ( folder )
+- Chart.yaml  # A yaml file that contains information about the chart
+- README.md
+- requirements.lock
+- requirements.yaml ( optional file that lists dependencies for that chart, and the dependencies are actually packaged in charts folder )
+- templates ( folder,  actually templates that combines with values to generate Kubernetes Manifest files )
+- values.yaml ( contains the default configuration values for the chart, this is where helm grabs the values for the manifest template )
+
+## Create your own Helm charts
+
+If you gonna create your own helm chart , you can use the following command : 
+
+    helm create meloncharts
+
+Some folders and files will be created from scratch :
+
+- Charts ( folder )
+- Chart.yaml
+- templates ( folder )
+- values.yaml
+
+If you gonna pull down some charts locally, you can use for example :
+
+    helm fetch stable/jenkins    # Here stable is the repostory name
+
+Then you'll see you have jenkins-xxx.tgz in your repo, you can go then install it locally by using : 
+
+    helm install ./helmcharts/jenkins-xxx.tgz
 
 ## In action :
 
@@ -95,6 +133,10 @@ You can also deploy a specific version :
 After entering this command, the output of the command will show how it deploy in Kubernetes :
 
 Usually in **default** namespace, related resource including : Secret / ConfigMap / PVC / Service / Deployment / StatefulSet ( MariaDB )
+
+If you need to search for a Chart, you can use : 
+
+     helm search chartname
 
 Check the depedencies by using the following : 
 
