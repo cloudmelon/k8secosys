@@ -20,6 +20,9 @@ Basically, Helm has two parts, the helm client and tiller server, they're not ne
 
    kubectl get pods --all-namespaces | grep tiller
 
+## Install Helm 
+
+The best teacher is at Github ( like always ) : https://github.com/helm/helm/blob/master/docs/install.md
 
 ## In action :
 
