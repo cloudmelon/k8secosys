@@ -169,7 +169,8 @@ Check the history of the releases :
 
     helm history melonreleasechart
 
-Sample output is like the following : 
+Sample output is like the following :
+
 <img src="screenshots/Rollback.PNG" alt="heml rollback" width="600px"/>
 
 Roll back to a specific version 
@@ -177,7 +178,10 @@ Roll back to a specific version
     helm rollback melon-release 2
 
 Sample output is like the following : 
+
 <img src="screenshots/Helm history.PNG" alt="package management" width="600px"/>
+
+
 
 ## Custom Charts
 
