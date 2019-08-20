@@ -54,8 +54,7 @@ Hence to wrap up the Helm charts are from :
 - Local charts : helm create and helm fetch ( The diffrence is Helm create help you create helm charts from scratch on you own , HOWEVER helm fetch help you pull down some charts then you can work on these chart and turn them into your local chart, highly customized )
 
 
-
-## File structure of a chart
+File structure of a chart : 
 
 - Charts ( folder )
 - Chart.yaml  # A yaml file that contains information about the chart
