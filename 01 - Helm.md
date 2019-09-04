@@ -158,7 +158,6 @@ Delete a helm chart has been deployed using the following :
 Whenever you install a chart, a new release is created. So one chart can be installed multiple times into the same cluster. And each can be independently managed and upgraded. To upgrade a release to a specified version of a chart and/or updates chart values :
 
     helm upgrade [RELEASE] [CHART_path] [flags]
-
 Example :
 
     helm upgrade melon-release ~/melonchart
@@ -175,6 +174,15 @@ Sample output is like the following :
 Roll back to a specific version 
 
     helm rollback melon-release 2
+
+
+Additionally, you can use the following commands : 
+
+Go back to the initial deployment : 
+
+     helm rollback 1   
+
+Go back to teh 
 
 Sample output is like the following : 
 
