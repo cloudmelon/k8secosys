@@ -208,6 +208,10 @@ To add Custom charts to the repo :
      helm repo add melonchart https://raw.githubusercontent.com/melonchart/helmcharts/master
 
 
+Really useful tips for using values and if you want to check the value that your helm chart is using at runtime, you can use the following command : 
+
+     helm get values --all melon-release
+
 ## Find more Helm commands 
 
     https://helm.sh/docs/helm/
