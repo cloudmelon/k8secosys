@@ -175,6 +175,9 @@ Roll back to a specific version
 
     helm rollback melon-release 2
 
+Roll back to previous version 
+
+    helm rollback melon-release 0
 
 Additionally, you can use the following commands : 
 
