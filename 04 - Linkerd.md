@@ -51,6 +51,9 @@ Connect to the cluster using the following :
 
    az aks get-credentials --resource-group melonk8s-linkerd-rg --name melonk8s
 
+You can check you have output like the following : 
+<img src="screenshots/Get credentials.PNG" alt="package management" width="600px"/>   
+
 To check how many nodes in your cluster, you can use the following command : 
 
     kubectl get nodes
@@ -100,6 +103,19 @@ After checking the control plane installed and running, you can now view the Lin
 
      linkerd dashboard &
 
+You'll have a clear view through the output of this command : 
+
+<img src="screenshots/Linkerd Dashboard.PNG" alt="package management" width="600px"/>   
+
+
+Open your browser at http://127.0.0.1:50750/, you can explore the dashobard of Linkerd : 
+
+<img src="screenshots/Linkerd Dashboard UI.PNG" alt="package management" width="600px"/>   
+
+
+You can expect to see Graphana Dashboard at http://127.0.0.1:50750/grafana as well :
+
+<img src="screenshots/Grafana Dashboard.PNG" alt="package management" width="600px"/>   
 
 ### Official doc website :
 https://linkerd.io/
