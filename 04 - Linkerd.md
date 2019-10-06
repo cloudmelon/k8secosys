@@ -86,7 +86,7 @@ Using the following to check if everything's ok :
 
 You'll get an output similar to the following : 
 
-<img src="screenshots/Linkerd Install check.PNG" alt="package management" width="600px"/>   
+<img src="screenshots/Linkerd Install check.PNG" alt="package management" width="300px"/>   
 
 To get the details of what kind of components you have installed with Linkerd, you can use the following command :
 
@@ -110,12 +110,13 @@ You'll have a clear view through the output of this command :
 
 Open your browser at http://127.0.0.1:50750/, you can explore the dashobard of Linkerd : 
 
-<img src="screenshots/Linkerd Dashboard UI.PNG" alt="package management" width="600px"/>   
+<img src="screenshots/Linkerd Dashboard UI.PNG" alt="package management" width="800px"/>   
 
 
 You can expect to see Graphana Dashboard at http://127.0.0.1:50750/grafana as well :
 
-<img src="screenshots/Grafana Dashboard.PNG" alt="package management" width="600px"/>   
+<img src="screenshots/Grafana Dashboard.PNG" alt="package management" width="800px"/>   
 
 ### Official doc website :
-https://linkerd.io/
+
+You can expect more details about Linkerd by visiting the following website : https://linkerd.io/
