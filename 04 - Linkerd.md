@@ -67,7 +67,7 @@ To check that your cluster is configured correctly and ready to install the cont
 
 You'll get an output similar to the following : 
 
-<img src="screenshots/Linkerd Prep check.PNG" alt="package management" width="600px"/>
+<img src="screenshots/Linkerd Prep check.PNG" alt="package management" width="300px"/>
 
 
 To run Linerd onto AKS by using : 
