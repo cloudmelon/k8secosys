@@ -128,6 +128,13 @@ First start to use Helm, you have to initialise ( install tiller ) using the fol
 
     helm init 
 
+In general, you can use the following command : 
+    helm init --service-account tiller 
+
+In some cases, you might have combined both linux and windows workloads within the same cluster, you can do the following as well : 
+
+    helm init --history-max 200 --service-account tiller --node-selectors "beta.kubernetes.io/os=linux"
+
   Upgrade if Tiller is already installed, you can use the following : 
   
    helm init --upgrade  
