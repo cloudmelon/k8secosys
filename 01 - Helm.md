@@ -8,9 +8,13 @@ Every operating sytem out there has some forms of package manager, such as Yum f
 
 ## Basics of Helm
 
+The architecture of Helm 2 is like the following diagram : 
+
+<img src="screenshots/Helm2.PNG" alt="helm architecture" width="600px"/>
+
 Helm in Kubernetes like the following diagram : 
 
-<img src="screenshots/Helm architecture.PNG" alt="package management" width="600px"/>
+<img src="screenshots/Helm architecture.PNG" alt="helm 2" width="600px"/>
 
 Basically, Helm has two parts, the helm client and tiller server, they're not necessarily to be in the same cluster, the client part can be in a remote server  :
 
