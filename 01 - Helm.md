@@ -1,4 +1,16 @@
-# Playbook Part 1 : Helm 2
+# Playbook Part 1 : Helm 3
+
+Helm 3 has been released on 13 Nov 2019. To install Helm 3, check out : https://helm.sh/docs/intro/install/
+
+## Initialize Helm 3
+
+Add the Helm stable chart repositories
+    helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+
+Update the repositories
+    helm repo update
+
+# Playbook Part 2 : Helm 2 
 
 ## Basics of package management
 
