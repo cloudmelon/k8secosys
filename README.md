@@ -5,6 +5,10 @@ This repostitory recap all useful information on ecosystem of Kubernetes.
 - [00 - General](https://github.com/cloudmelon/k8secosys/blob/master/00%20-%20General.md)
 - [01 - Helm](https://github.com/cloudmelon/k8secosys/blob/master/01%20-%20Helm.md)
 - [02 - Prometheus](https://github.com/cloudmelon/k8secosys/blob/master/02%20-%20Prometheus.md)
+- [02 - DataDog](https://github.com/cloudmelon/k8secosys/blob/master/02%20-%20Prometheus.md)
+- [02 - Linkerd](https://github.com/cloudmelon/k8secosys/blob/master/02%20-%20Prometheus.md)
+- [02 - Istio](https://github.com/cloudmelon/k8secosys/blob/master/02%20-%20Prometheus.md)
+- [02 - Fluentd](https://github.com/cloudmelon/k8secosys/blob/master/02%20-%20Prometheus.md)
 
 ## Azure Kubernetes services ( AKS ) useful references : 
 
