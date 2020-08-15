@@ -254,6 +254,10 @@ To add Custom charts to the repo :
      helm repo add melonchart https://raw.githubusercontent.com/melonchart/helmcharts/master
 
 
+To extract all installed manifest in a namespace
+
+     helm get manifest osm --namespace osm-system
+
 Really useful tips for using values and if you want to check the value that your helm chart is using at runtime, you can use the following command : 
 
      helm get values --all melon-release
